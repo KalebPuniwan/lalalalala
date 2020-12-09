@@ -14,6 +14,7 @@ public class ActivityUtil {
     }
     public void startMainActivity() {
         context.startActivity(new Intent(context, MainActivity.class));
+
     }
     public void startUserProfile(UserDAO user) {
         Intent i = new Intent(context, UserProfileActivity.class);
@@ -23,6 +24,7 @@ public class ActivityUtil {
         i.putExtra("prodi",user.getProdi());
         i.putExtra("fakultas",user.getFakultas());
         i.putExtra("jenis_kelamin",user.getJenis_kelamin());
+        i.putExtra("ASUUUUU",user.getJenis_kelamin());
         context.startActivity(i);
     }
 }
